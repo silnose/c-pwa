@@ -8,15 +8,15 @@ PWA que utiliza la API de MealDB para mostrar recetas con sus instrucciones. Alg
 - Web Share API
 - Creado con [Create React App](https://github.com/facebookincubator/create-react-app).
 
+![](./readme-static/1.png)
+![](./readme-static/2.png)
+![](./readme-static/3.png)
+
 ## Scripts
 
 - `npm install` para instalar las dependencias
 - `npm run dev` para entorno de desarrollo
 - `npm run build && npm start` para producción
-
-## Licencia
-
-MIT
 
 # Que son las PWA?
 
@@ -85,9 +85,10 @@ https://github.com/GoogleChrome/workbox
 # Workbox
 
 <https://developers.google.com/web/tools/workbox/>
+
 El funcionamiento de un service worker por defecto toma una lista de assets para precargarlos y si la ruta coincide exactamente con un asset entonces lo tomara de cache.
 
-Workbox tiene una característica llamada registerNavigationRoute la cual se encarga de hacer el funcionamiento por defecto de un service worker más aparte si encuentra una url que no conoce va a buscar una url, en este caso index.html y que el se encargue de lo que va a mostrar.
+Workbox tiene una característica llamada registerNavigationRoute la cual se encarga de hacer el funcionamiento por defecto de un service worker
 
 ## Estrategias de carga
 
@@ -123,9 +124,10 @@ Esta estrategia puede ser peligrosa y solo es recomendable cuando queremos máxi
 Esta es una estrategia de carga muy particular y que mejor funciona a la hora de mejorar el rendimiento. Lo que hace es ir a cache y a red al mismo tiempo, toma la versión más rápida que siempre será la de cache y en cuanto recibe la de red va a actualizar la versión de cache.
 
 Es recomendable esta estrategia cuando queremos mucha velocidad y estamos manejando un recurso que puede estar levemente desactualizado.
-Al momento de escribir nuestras estrategias en Workbox SI IMPORTA el orden en que pongamos las cosas, si queremos una estrategia o regla por defecto debemos poner esa regla hasta el final de todo.
 
 ![](https://developers.google.com/web/tools/workbox/images/modules/workbox-strategies/stale-while-revalidate.png)
+
+NOTA: Al momento de escribir nuestras estrategias en Workbox SI IMPORTA el orden en que pongamos las cosas, si queremos una estrategia o regla por defecto debemos poner esa regla hasta el final de todo.
 
 # Google Analytics
 
@@ -136,6 +138,7 @@ Workbox ya cuenta con un método para facilitar que Google Analytics funcione de
 # Web Share API
 
 <https://www.w3.org/TR/web-share/>
+
 Nos permite usar el Share nativo del sistema operativo.
 
 Para implementarlo hay que tener presente que solo funcionara si hacemos click a algún link, esto es una medida de precaución para que nadie abuse de la API obligándonos a tener que compartir algo que no queremos. Web Share API solamente funciona con HTTPS.
@@ -201,7 +204,7 @@ Una de las funcionalidades más populares de las PWA son las Notificaciones.
 
 Existen tres tipos de permiso para las notificaciones:
 
-- Estado por defecto: no sabemos si podemos enviar notificaciones o no, aquí es donde debemos preguntarle al usuario si quiere recibir las notificaciones.
+- Estado por defecto:(DEFAULT) no sabemos si podemos enviar notificaciones o no, aquí es donde debemos preguntarle al usuario si quiere recibir las notificaciones.
 - Granted: el usuario ha concedido el permiso.
 - Denied: directamente no podemos enviar las notificaciones.
 
@@ -242,3 +245,19 @@ Primero que nada, debemos preguntar si nuestro navegador puede mandar notificaci
 
 - <https://ngrok.com/> For quick demos and other simple tunneling needs.
 - <https://letsencrypt.org/>
+
+## Licencia 📄
+
+MIT
+
+## Conceptos Aprendidos 🤓
+
+- <https://platzi.com/courses/pwa-react-js/>
+
+## Certificado
+
+- [Diploma](./readme-static/diploma-pwa-react-js.pdf)
+
+---
+
+👩‍💻 with ❤️ by [silnose](https://github.com/silnose) 😊
