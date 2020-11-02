@@ -1,0 +1,24 @@
+{
+  "name": "platzi-recetas",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "16.13.1",
+    "react-app-rewire-workbox": "2.0.1",
+    "react-app-rewired": "2.1.6",
+    "react-dom": "16.13.1",
+    "react-ga": "^3.1.2",
+    "react-helmet": "5.2.0",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "1.1.4",
+    "serve": "^9.1.0",
+    "workbox-webpack-plugin": "4.3.1"
+  },
+  "scripts": {
+    "dev": "react-app-rewired start",
+    "start": "serve ./build -s -p 5000",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  }
+}
