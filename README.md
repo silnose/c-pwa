@@ -1,4 +1,4 @@
-# Progresive Web App (PWA)
+# Mis Recetazas. (Progresive Web App (PWA))
 
 PWA que utiliza la API de MealDB para mostrar recetas con sus instrucciones. Algunas de las features que tiene son:
 
